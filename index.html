@@ -5,22 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Techwave</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        @keyframes float {
+            0%,100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+    </style>
 </head>
-<header>
-<nav>
-<div>
-    <img src="" alt="">
-    <h1>hello world</h1>
+
+<body class="bg-[#1A0B2E]">
+    <header class="max-w-7xl mx-auto">
+        <nav class="flex justify-between items-center p-10">
+            
+            <div>
+                <h1 class="text-5xl text-white font-extrabold">Tech<span class="bg-gradient-to-b from-[rgba(251,9,180,0.5)] to-[rgba(251,9,180,1)]
+               bg-clip-text text-transparent">Wave</span></h1>
+            </div>
+            <div>
+                <ul class="text-white flex gap-8 text-sm font-medium">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Episodes</a></li>
+                    <li><a href="">Hosts</a></li>
+                </ul>
+            </div>
+                <button class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-4xl cursor-pointer hover:bg-amber-800">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </nav>
+        
+    </header>
+    <hr class="border-0.5 border-gray-600">
+    <main class=" ">
+        <section>
+            <div class="h-[760px] bg-[url('./assets/hero-circle.png'),url('./assets/hero-bg.png')] bg-no-repeat bg-[position:top,center] bg-[size:auto,center] mt-52">
+                <p class="bg-[rgba(0,255,136,1)] py-2 px-4 text-lg font-semibold rounded-4xl w-[75px] absolute top-[330px] right-[730px]  animate-[float_2s_ease-in-out_infinite] shadow-[0_0_40px_rgba(255,255,255,0.8)]">New</p>
+                
+                <img class=" absolute top-[430px] right-[810px]"  src="./assets/microphone.png" alt="">
+                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center ">
+                  <h1 class=" text-6xl font-extrabold text-white text-center mt-10">TechWave</h1>
+                  <p class="text-white text-sm my-2  text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                 <div>
+                     <button class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-4xl cursor-pointer hover:bg-amber-800"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
+                      <button class="text-[rgba(0,255,136,1)] text-sm font-semibold py-3 px-5 bg-transparent border-2 border-[rgba(0,255,136,1)] rounded-4xl cursor-pointer hover:bg-amber-100 mt-2"><i class="fa-solid fa-envelope"></i> Subscribe</button>
+                 </div>
+                 </div>
+                
 </div>
-</nav>
-</header>
-<main>
-
-</main>
-<footer>
-
-</footer>
-<body>
+            
+        </section>
+    </main>
+    
     
 </body>
 </html>
