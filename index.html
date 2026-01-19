@@ -25,42 +25,72 @@
 
 <body class="bg-[#1A0B2E] inter-fonts">
     <header class="max-w-7xl mx-auto">
-        <nav class="flex justify-between items-center p-10">
-            
-            <div>
-                <h1 class="text-5xl text-white font-extrabold">Tech<span class="bg-gradient-to-b from-[#ec71c7] to-[#69024a]
-               bg-clip-text text-transparent">Wave</span></h1>
-            </div>
-            <div>
-                <ul class="text-white flex gap-8 text-sm font-medium">
-                    <li><a href="">About</a></li>
-                    <li><a href="">Episodes</a></li>
-                    <li><a href="">Hosts</a></li>
-                </ul>
-            </div>
-                <button class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-4xl cursor-pointer hover:bg-amber-800">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-        </nav>
-        
-    </header>
+  <nav class="flex justify-between items-center p-5 sm:p-10">
+    <div>
+      <h1 class="text-3xl sm:text-5xl text-white font-extrabold">
+        Tech
+        <span class="bg-gradient-to-b from-[#ec71c7] to-[#69024a] bg-clip-text text-transparent">
+          Wave
+        </span>
+      </h1>
+    </div>
+    <div class="hidden sm:block">
+      <ul class="text-white flex gap-8 text-sm font-medium">
+        <li><a href="">About</a></li>
+        <li><a href="">Episodes</a></li>
+        <li><a href="">Hosts</a></li>
+      </ul>
+    </div>
+    <button class="hidden sm:block text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-full cursor-pointer">
+      Subscribe <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <img
+      class="block sm:hidden w-6 h-6 cursor-pointer"
+      src="./assets/hamburger-menu.png"
+      alt="menu"
+    >
+
+  </nav>
+</header>
+
     <hr class="border-0.5 border-gray-800">
     <main class=" ">
-        <section>
-            <div class="h-[760px] bg-[url('./assets/hero-circle.png'),url('./assets/hero-bg.png')] bg-no-repeat bg-[position:top,center] bg-[size:auto,center] mt-52">
-                <p class="bg-[rgba(0,255,136,1)] py-2 px-4 text-lg font-semibold rounded-4xl w-[75px] absolute top-[330px] right-[730px]  animate-[float_2s_ease-in-out_infinite] shadow-[0_0_40px_rgba(255,255,255,0.8)]">New</p>
-                
-                <img class=" absolute top-[430px] right-[810px]"  src="./assets/microphone.png" alt="">
-                <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-center ">
-                  <h1 class=" text-6xl font-extrabold text-white text-center mt-10">TechWave</h1>
-                  <p class="text-white text-sm my-2  text-center">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                 <div>
-                     <button class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-4xl cursor-pointer hover:bg-amber-800"><i class="fa-brands fa-spotify"></i> Listen on Spotify</button>
-                      <button class="text-[rgba(0,255,136,1)] text-sm font-semibold py-3 px-5 bg-transparent border-2 border-[rgba(0,255,136,1)] rounded-4xl cursor-pointer hover:bg-amber-100 mt-2"><i class="fa-solid fa-envelope"></i> Subscribe</button>
-                 </div>
-                 </div>
-                
-</div>
-            
+        <section class="relative mt-24 sm:mt-40">
+  <div class="relative min-h-[600px] sm:min-h-[760px bg-[url('./assets/hero-circle.png'),url('./assets/hero-bg.png')] bg-no-repeat bg-[position:top_center,center]  bg-[size:auto,cover">
+   <p class="absolute top-24 right-4 lg:top-[20px] lg:right-[730px] bg-[rgba(0,255,136,1)] py-2 px-4 text-sm lg:text-lg font-semibold rounded-full animate-[float_2s_ease-in-out_infinite] shadow-[0_0_40px_rgba(255,255,255,0.8)]">New</p>
+
+    <img src="./assets/microphone.png"alt="microphone"class="absolute top-36 right-40 w-16 xl:top-[100px] xl:right-[820px] xl:w-auto"/>
+
+    <div
+      class="absolute bottom-20  left-1/2 -translate-x-1/2
+             text-center w-full px-4"
+    >
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white">
+        TechWave
+      </h1>
+
+      <p class="text-white text-sm sm:text-base my-3 max-w-xl mx-auto">
+        Your daily dose of tech insights, productivity hacks, and personal growth
+      </p>
+
+      <div class="flex  gap-3 justify-center mt-4">
+        <button
+          class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-full  hover:bg-amber-700 " >
+          <i class="fa-brands fa-spotify"></i> Listen on Spotify
+        </button>
+
+        <button
+          class="text-[rgba(0,255,136,1)] text-sm font-semibold py-3 px-5
+                 bg-transparent border-2 border-[rgba(0,255,136,1)]
+                 rounded-full hover:bg-fuchsia-950 hover:border-fuchsia-950"
+        >
+          <i class="fa-solid fa-envelope"></i> Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
         </section>
+
         <section class=" bg-[#1A0B2E] ">
             <div class="max-w-7xl mx-auto p-10"> 
                 <h1 class="text-center text-white text-5xl font-bold">About the Podcast</h1>
@@ -100,7 +130,7 @@ and share stories of personal growth from industry leaders.
                 <div class="border-0 bg-[rgba(53,17,101,0.4)] rounded-4xl p-10 grid row-span-2">
                     <img src="./assets/headphone.png" alt="">
                     <h3 class="text-2xl font-bold text-white ">Premium Audio Quality</h3>
-                    <p class="text-sm text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                    <p class="text-sm text-white">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering.   Every episode is mastered for optimal listening across all devices and platforms.</p>
                 </div>
                
                  <div class="border-0 bg-[rgba(53,17,101,0.4)] rounded-4xl p-10 grid col-span-2">
