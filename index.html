@@ -41,7 +41,7 @@
         <li><a href="">Hosts</a></li>
       </ul>
     </div>
-    <button class="hidden sm:block text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-full cursor-pointer">
+    <button class="hidden sm:block text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-full cursor-pointer hover:bg-amber-800">
       Subscribe <i class="fa-solid fa-arrow-right"></i>
     </button>
     <img
@@ -55,16 +55,17 @@
 
     <hr class="border-0.5 border-gray-800">
     <main class=" ">
-        <section class="relative mt-24 lg:mt-40">
-  <div class="relative min-h-[600px] lg:min-h-[760px bg-[url('./assets/hero-circle.png'),url('./assets/hero-bg.png')] bg-no-repeat bg-[position:top_center]  bg-[size:auto,cover">
-   <p class="absolute top-24 right-4 lg:top-[20px] lg:right-[730px] bg-[rgba(0,255,136,1)] py-2 px-4 text-sm lg:text-lg font-semibold rounded-full animate-[float_2s_ease-in-out_infinite] shadow-[0_0_40px_rgba(255,255,255,0.8)]">New</p>
+       <section class="relative mt-24 lg:mt-40">
+  <div class="relative min-h-[600px] lg:min-h-[760px] bg-[url('./assets/hero-bg.png')] bg-cover bg-no-repeat">
 
-    <img src="./assets/microphone.png"alt="microphone"class="absolute top-36 right-40 w-16 lg:top-[100px] xl:right-[820px] lg:w-auto"/>
+    <div class="relative mx-auto mt-16 w-[280px] sm:w-[360px] lg:w-[420px]">
+      <img src="./assets/hero-circle.png" class="w-full" alt="circle" />
+      <p class="absolute top-[8%] right-[10%] bg-[rgba(0,255,136,1)] py-2 px-4 text-sm lg:text-lg font-semibold  rounded-full animate-[float_2s_ease-in-out_infinite] shadow-[0_0_40px_rgba(255,255,255,0.8)]">New</p>
 
-    <div
-      class="absolute bottom-20  left-1/2 -translate-x-1/2
-             text-center w-full px-4"
-    >
+      <img src="./assets/microphone.png" alt="microphone" class="absolute bottom-[30%] right-[36%] w-16 sm:w-14 lg:w-32"/>
+    </div>
+
+    <div class="absolute bottom-20 left-1/2 -translate-x-1/2 text-center w-full px-4">
       <h1 class="text-4xl sm:text-6xl font-extrabold text-white">
         TechWave
       </h1>
@@ -73,23 +74,26 @@
         Your daily dose of tech insights, productivity hacks, and personal growth
       </p>
 
-      <div class="flex  gap-3 justify-center mt-4">
+      <div class="flex gap-3 justify-center mt-4">
         <button
-          class="text-white text-sm font-semibold py-3 px-5 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))] rounded-full  hover:bg-amber-700 " >
+          class="text-white text-sm font-semibold py-3 px-5
+                 bg-[linear-gradient(to_bottom,rgba(251,9,180,0.5),rgba(251,9,180,1))]
+                 rounded-full hover:bg-amber-800 cursor-pointer">
           <i class="fa-brands fa-spotify"></i> Listen on Spotify
         </button>
 
         <button
           class="text-[rgba(0,255,136,1)] text-sm font-semibold py-3 px-5
-                 bg-transparent border-2 border-[rgba(0,255,136,1)]
-                 rounded-full hover:bg-fuchsia-950 hover:border-fuchsia-950"
-        >
+                 border-2 border-[rgba(0,255,136,1)] cursor-pointer
+                 rounded-full hover:bg-fuchsia-950 hover:border-fuchsia-950 hover:text-white">
           <i class="fa-solid fa-envelope"></i> Subscribe
         </button>
       </div>
     </div>
+
   </div>
-        </section>
+</section>
+
 
         <section class=" bg-[#1A0B2E] ">
             <div class="max-w-7xl mx-auto p-10"> 
